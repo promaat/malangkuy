@@ -1,0 +1,248 @@
+.main-header {
+  background: linear-gradient(
+      to right bottom,
+      rgba($grey-dark, 0.2),
+      rgba($grey-dark, 0.9)
+    ),
+    url(../../img/casey-horner-487085-unsplash.jpg) center no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: 0;
+  @include parallax;
+  animation-iteration-count: infinite;
+  animation-duration: 50s;
+  animation-name: zoomBg;
+  @include respond(phone) {
+    animation: none;
+  }
+  &__showcase {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+.nav-wrapper {
+  position: relative;
+  height: 100%;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-left: 55px;
+  @include respond(phone){
+    padding-right: 0;
+    padding-top: 15px;
+  }
+}
+.secondary-header {
+  background: linear-gradient(
+      to right bottom,
+      rgba($grey-dark, 0.2),
+      rgba($grey-dark, 0.9)
+    ),
+    url(../../img/annie-spratt-372219-unsplash.jpg) center no-repeat;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: 0;
+  @include parallax;
+  animation-iteration-count: infinite;
+  animation-duration: 50s;
+  animation-name: zoomBg;
+  @include respond(phone) {
+    animation: none;
+  }
+  &__showcase {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+.teritiary-header {
+  background: linear-gradient(
+      to right bottom,
+      rgba($grey-dark, 0.2),
+      rgba($grey-dark, 0.9)
+    ),
+    url(../../img/dose-juice-1184427-unsplash.jpg) center no-repeat;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: 0;
+  @include parallax;
+  animation-iteration-count: infinite;
+  animation-duration: 50s;
+  animation-name: zoomBg;
+  @include respond(phone) {
+    animation: none;
+  }
+  &__showcase {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+.section-intro {
+  padding: 7.5rem 5rem;
+  background-color: #fff;
+  position: relative;
+  height: 100vh;
+  @include respond(phone){
+    height: 130vh;
+  }
+  @include respond(tab-port) {
+    text-align: center !important;
+  }
+}
+.article-wrapper {
+  position: relative;
+  &--img {
+    background-color: $black;
+    width: 100%;
+    box-shadow: 0 1rem 2rem rgba($black, 0.2);
+    transition: all 0.2s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(0.95);
+      box-shadow: 0 0.5rem 1rem rgba($black, 0.4);
+    }
+  }
+  &--text {
+    text-align: center !important;
+    @include respond(phone) {
+      opacity: 0;
+      width: 0;
+      content: none;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+}
+
+.section-advantage {
+  padding: 10rem 8rem !important;
+  background: linear-gradient(
+      to right bottom,
+      rgba($grey-dark, 0.2),
+      rgba($grey-dark, 0.9)
+    ),
+    url(../../img/ruslan-bardash-349171-unsplash.jpg) center no-repeat;
+  transform: skewY(-7deg);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  &__wrapper {
+    transform: skewY(7deg);
+  }
+  &--card {
+    opacity: 0.8;
+    box-shadow: 0 2rem 3rem rgba($black, 0.3) !important;
+    transition: all 0.2s !important;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 3rem 4rem rgba($black, 0.5) !important;
+    }
+  }
+}
+
+.section-food {
+  padding: 10rem 8rem !important;
+  background: linear-gradient(
+      to right bottom,
+      rgba($grey-dark, 0.2),
+      rgba($grey-dark, 0.9)
+    ),
+    url(../../img/khachik-simonian-180759-unsplash.jpg) center no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transform: skewY(-7deg);
+  &__wrapper {
+    transform: skewY(7deg);
+  }
+}
+
+.section-poppular {
+  padding: 10rem 0 !important;
+  @include respond(phone){
+    padding: 10rem 2rem !important;
+  }
+  &__card-wrapper {
+    position: relative;
+    transition: all 0.2s !important;
+    box-shadow: 0 1rem 2rem rgba($black, 0.3) !important;
+    &:hover {
+      transform: scale(1.1);
+      @include respond(phone) {
+        transform: scale(1);
+        box-shadow: 0 1rem 2rem rgba($black, 0.3) !important;
+      }
+    }
+  }
+  &:hover &__card-wrapper:not(:hover) {
+    transform: scale(0.95);
+    @include respond(phone) {
+      transform: scale(1);
+    }
+  }
+}
+.section-comments {
+  position: relative;
+  height: 90vh;
+  background: linear-gradient(
+      to right bottom,
+      rgba($grey-dark, 0.2),
+      rgba($grey-dark, 0.9)
+    ),
+    url(../../img/luke-stackpoole-531321-unsplash.jpg) center no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include parallax;
+  &__wrapper {
+    @include absCenter;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 17rem 10rem;
+    @include respond(phone){
+      padding: 17rem 0;
+    }
+    &slider{
+      @include respond(phone){
+        height: 440px !important;
+      }
+    }
+  }
+  &--overflow{
+    overflow: visible !important;
+  }
+}
+.section-contact {
+  position: relative;
+}
+.page-footer {
+  padding-top: 0 !important;
+  text-align: center;
+}
+.background-striped {
+  background: linear-gradient(
+    to right bottom,
+    rgba($grey-dark, 0.2),
+    rgba($grey-dark, 0.9)
+  );
+}
+.section-recomended {
+  padding: 0 !important;
+}

@@ -1,0 +1,22 @@
+.avatar {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%);
+  z-index: 2000;
+  position: absolute;
+  transition: all 0.2s;
+  text-align: center;
+  &__img {
+    width: 6rem !important;
+    height: 6rem !important;
+    border-radius: 6rem;
+    box-shadow: 0 1rem 2rem rgba($black, 0.2);
+    transition: all 0.2s;
+    &:hover {
+      transform: translateY(-1rem);
+      box-shadow: 0 2rem 3rem rgba($black, 0.4);
+    }
+  }
+}
+

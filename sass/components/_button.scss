@@ -1,0 +1,45 @@
+.button-header {
+  position: absolute;
+  left: 48.2%;
+  bottom: 10%;
+  transform: translate(-50%);
+  animation-name: jumpingIcons;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  @include respond(phone) {
+    left: 45.4%;
+  }
+}
+.btn-primary {
+  &,
+  &:link,
+  &:visited {
+    font-size: 1.5rem !important;
+    transition: all 0.2s !important;
+    position: relative !important;
+    animation: moveInBottom 1s !important;
+    background-color: $color-primary !important;
+    transform: translateY(1rem);
+  }
+  &:hover {
+    background-color: $color-primary;
+    transform: translateY(-0.3rem) !important;
+    box-shadow: 0 1rem 2rem rgba($black, 0.2) !important;
+  }
+  &:active {
+    transform: translateY(1rem) !important;
+    box-shadow: 0 0.5rem 1rem rgba($black, 0.1) !important;
+  }
+}
+.button-fab {
+  transition: all .2s !important;
+  &:hover {
+    background-color: $color-primary;
+    transform: translateY(-0.3rem) !important;
+    box-shadow: 0 1rem 2rem rgba($black, 0.2) !important;
+  }
+  &:active {
+    transform: translateY(1rem) !important;
+    box-shadow: 0 0.5rem 1rem rgba($black, 0.1) !important;
+  }
+}

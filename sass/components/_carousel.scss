@@ -1,0 +1,22 @@
+.carousel-wrapper {
+  margin-top: -50px;
+  position: relative;
+  &__img {
+    width: 170% !important;
+    transition: .2s;
+    box-shadow: 0 1.5rem 4rem rgba($black, 0.4);
+    &:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($black, 0.5);
+      z-index: 20;
+    }
+  }
+  &:hover &__img:not(:hover) {
+    transform: scale(0.95);
+  }
+  @include respond(phone){
+    width: 0;
+    opacity: 0;
+  }
+}
+

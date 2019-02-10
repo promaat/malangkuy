@@ -1,0 +1,9 @@
+.slides-transparent{
+  background-color: transparent !important;
+}
+.slider-caption{
+  top:65% !important;
+}
+.slider-recomended{
+  @include parallax;
+}

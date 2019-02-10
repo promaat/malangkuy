@@ -1,0 +1,17 @@
+.card-primary{
+  box-shadow: 0 .5rem 1rem rgba($black,.2) !important;
+  transition: all .2s !important;
+  &:hover{
+    transform: scale(1.05);
+    box-shadow: 0 1rem 2rem rgba($black,.2) !important;
+    @include respond(phone){
+      transform: scale(1) !important;
+    }
+  }
+}
+.modal-card{
+  background-color: transparent !important;
+  max-height: none !important;
+  width: none !important;
+  overflow-y: inherit !important;
+}

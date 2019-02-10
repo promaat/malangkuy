@@ -1,0 +1,22 @@
+{
+  "name": "colorfullmalang.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/index.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/kisraabrawis/batukuy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/kisraabrawis/batukuy/issues"
+  },
+  "homepage": "https://gitlab.com/kisraabrawis/batukuy#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
